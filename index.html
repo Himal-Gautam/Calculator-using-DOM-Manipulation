@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    
+    <h1 id="title">Calculator Task DOM Manipulation</h1>
+    <p id="description">developing calculator using dom manipulation</p>
+
+    <div class="container">
+      <div class="header">Calculator</div>
+
+      <input type="text" class="result" id="result">
+      <div class="first-row">
+          <button class="global" id="7" onclick="document.getElementById('result').value += '7'">7</button>
+          <button class="global" id="8" onclick="document.getElementById('result').value += '8'">8</button>
+          <button class="global" id="9" onclick="document.getElementById('result').value += '9'">9</button>
+          <button class="global" id="modulus" onclick="document.getElementById('result').value += '%'">%</button>
+      </div>
+      <div class="second-row">
+        <button class="global" id="4" onclick="document.getElementById('result').value += '4'">4</button>
+        <button class="global" id="5" onclick="document.getElementById('result').value += '5'">5</button>
+        <button class="global" id="6" onclick="document.getElementById('result').value += '6'">6</button>
+        <button class="global" id="divide" onclick="document.getElementById('result').value += '/'">/</button>
+      </div>
+      <div class="third-row">
+        <button class="global" id="1" onclick="document.getElementById('result').value += '1'">1</button>
+        <button class="global" id="2" onclick="document.getElementById('result').value += '2'">2</button>
+        <button class="global" id="3" onclick="document.getElementById('result').value += '3'">3</button>
+        <button class="global" id="multiply" onclick="document.getElementById('result').value += '*'">*</button>
+      </div>
+      <div class="fourth-row">
+        <button class="global" onclick="document.getElementById('result').value += '.'">.</button>
+        <button class="global" onclick="document.getElementById('result').value += '0'">0</button>
+        <button class="global" id="subtract" onclick="document.getElementById('result').value += '-'">-</button>
+        <button class="global" id="add" onclick="document.getElementById('result').value += '+'">+</button>
+      </div>
+      <div>
+        <button class="green white-text big" id="equal" onclick="document.getElementById('result').value = eval(document.getElementById('result').value)">=</button>
+        <button class="red white-text small" id="clear" onclick="document.getElementById('result').value = ''">C</button>
+      </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
