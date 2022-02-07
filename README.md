@@ -1,4 +1,3 @@
-# Task of DOM- Day -2 : 24/10/2021 - Sunday
 # Calculator-using-DOM-Manipulation
 Problem statement
 Create a calculator using DOM.
